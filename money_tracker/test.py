@@ -1,7 +1,13 @@
-from turtle import clearscreen
+import pandas as pd
+import numpy as np
+from dataclasses import dataclass as dc
+import enum
 
+class item_category(enum.Enum):
+    grocery = 0
+    alcohol = 1
+    weed    = 2
+    monthly = 3
+    
 
-def add(a,b):
-    return a+b
-
-print("\n\tresult of summing 1 and 2: ", add(1,2), "\n")
+index = ["Income", "Spending"]
