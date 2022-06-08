@@ -9,5 +9,10 @@ class item_category(enum.Enum):
     weed    = 2
     monthly = 3
     
+df = pd.DataFrame([[600,0]], index=[1], columns=["income", "expenses"])
 
-index = ["Income", "Spending"]
+print(df)
+
+df.add(5,1)
+
+print(df)
